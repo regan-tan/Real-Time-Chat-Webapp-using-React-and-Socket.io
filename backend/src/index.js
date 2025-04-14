@@ -1,7 +1,7 @@
 import express from "express";
+import cors from "cors";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import cors from "cors";
 
 import path from "path";
 
@@ -16,7 +16,7 @@ dotenv.config();
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
-app.use(express.json());
+app.use(express.json({ limit: "30mb" }));
 app.use(cookieParser());
 app.use(
   cors({
