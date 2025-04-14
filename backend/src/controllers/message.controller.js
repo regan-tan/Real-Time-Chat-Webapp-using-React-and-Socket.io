@@ -60,6 +60,9 @@ export const sendMessage = async (req, res) => {
     // real-time functionality (socket.io)
     const receiverSocketId = getReceiverSocketId(receiverId);
     if (receiverSocketId) {
+      // If user is online, send message in real time.
+      // Using io.to because we are only sending this message
+      // to the receiver and not (emit) to everyone
       io.to(receiverSocketId).emit("newMessage", newMessage);
     }
 

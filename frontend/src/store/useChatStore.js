@@ -54,11 +54,14 @@ export const useChatStore = create((set, get) => ({
       if (!isMessageSentFromSelectedUser) return;
 
       set({
+        // Keeping all prev messages in the History
+        // and adding the new message at the end
         messages: [...get().messages, newMessage],
       });
     });
   },
 
+  // When we logout or close the window
   unsubscribeFromMessages: () => {
     const socket = useAuthStore.getState().socket;
     socket.off("newMessage");

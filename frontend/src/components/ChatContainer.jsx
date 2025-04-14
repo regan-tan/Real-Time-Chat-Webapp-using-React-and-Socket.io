@@ -51,6 +51,8 @@ const ChatContainer = () => {
         {messages.map((message) => (
           <div
             key={message._id}
+            // determine where the message bubble will be, LEFT or RIGHT side, 
+            // depending on whether I am the sender or recipient of that particular message
             className={`chat ${message.senderId === authUser._id ? "chat-end" : "chat-start"}`}
             ref={messageEndRef}
           >
