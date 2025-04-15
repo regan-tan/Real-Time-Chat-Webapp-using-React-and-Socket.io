@@ -31,6 +31,7 @@ app.use(
     origin: function (origin, callback) {
       const allowedOrigins = [
         "http://localhost:5173",
+        "http://localhost:3000", // dockerized frontend
         "https://real-time-chat-webapp-using-react-and-socket-io.vercel.app",
       ];
       if (!origin || allowedOrigins.includes(origin)) {
