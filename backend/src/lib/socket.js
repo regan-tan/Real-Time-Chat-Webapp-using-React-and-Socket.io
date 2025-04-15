@@ -13,6 +13,7 @@ const io = new Server(server, {
     ],
     credentials: true,
   },
+  path: "/socket.io",
 });
 
 export function getReceiverSocketId(userId) {
