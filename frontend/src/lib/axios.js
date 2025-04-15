@@ -1,9 +1,10 @@
+// src/lib/axios.js
 import axios from "axios";
 
 export const axiosInstance = axios.create({
   baseURL:
     import.meta.env.MODE === "development"
-      ? "/api"
-      : "http://backend:5001/api", // Docker service name used in production
+      ? "http://localhost:5001/api"
+      : "http://localhost:5001/api", // hardcoded for docker localhost testing
   withCredentials: true,
 });
