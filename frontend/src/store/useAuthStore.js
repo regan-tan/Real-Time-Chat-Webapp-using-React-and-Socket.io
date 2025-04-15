@@ -5,8 +5,8 @@ import { io } from "socket.io-client";
 
 const BASE_URL =
   import.meta.env.MODE === "development"
-    ? "http://localhost:5173"
-    : "http://backend:5001";
+    ? `http://${window.location.hostname}:5001`
+    : import.meta.env.VITE_SOCKET_URL;
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
