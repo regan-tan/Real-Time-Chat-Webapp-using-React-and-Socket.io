@@ -1,33 +1,33 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
   "type": "module",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "debug": "^4.3.4",
+    "debug": "4.3.4",
     "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mime-types": "^3.0.1",
     "mongoose": "^8.8.1",
+    "npm-force-resolutions": "^0.0.10",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "resolutions": {
+    "debug": "4.3.4"
   }
 }
