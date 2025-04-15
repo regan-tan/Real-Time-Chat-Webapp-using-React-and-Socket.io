@@ -27,7 +27,7 @@
     "npm-force-resolutions": "^0.0.10"
   },
   "resolutions": {
-    "debug": "^4.3.4",
+    "debug": "4.3.4",
     "gopd": "1.0.1",
     "get-intrinsic": "1.2.1",
     "side-channel": "1.0.6"
