@@ -19,7 +19,7 @@
     "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mime-types": "^3.0.1",
+    "mime-types": "2.1.35",
     "mongoose": "^8.8.1",
     "npm-force-resolutions": "^0.0.10",
     "socket.io": "^4.8.1"
@@ -28,6 +28,7 @@
     "nodemon": "^3.1.7"
   },
   "resolutions": {
-    "debug": "4.3.4"
+    "debug": "4.3.4",
+    "mime-types": "2.1.35"
   }
 }
