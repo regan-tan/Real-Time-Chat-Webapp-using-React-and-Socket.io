@@ -7,7 +7,6 @@
     "node": "18.x"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
@@ -23,13 +22,6 @@
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7",
-    "npm-force-resolutions": "^0.0.10"
-  },
-  "resolutions": {
-    "debug": "4.3.4",
-    "gopd": "1.0.1",
-    "get-intrinsic": "1.2.1",
-    "side-channel": "1.0.6"
+    "nodemon": "^3.1.7"
   }
 }
