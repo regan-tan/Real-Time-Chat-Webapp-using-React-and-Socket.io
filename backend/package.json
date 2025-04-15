@@ -29,6 +29,8 @@
   },
   "resolutions": {
     "debug": "4.3.4",
-    "mime-types": "2.1.35"
+    "mime-types": "2.1.35",
+    "gopd": "1.0.1",
+    "get-intrinsic": "1.2.1"
   }
 }
